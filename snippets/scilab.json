@@ -4,26 +4,30 @@
     "body": [
       "case ${1:expression} then",
       "\t$0"
-    ]
+    ],
+    "description": "case statement"
   },
   "elseif": {
     "prefix": "elseif",
     "body": [
       "elseif ${1:condition} then",
       "$0"
-    ]
+    ],
+    "description": "elseif statement"
   },
   "exec": {
     "prefix": "exec",
     "body": [
       "exec(\"${0:script.sce}\")"
-    ]
+    ],
+    "description": "script file execution"
   },
   "eye": {
     "prefix": "eye",
     "body": [
       "eye(${1:size}, ${2:$1})"
-    ]
+    ],
+    "description": "identity matrix"
   },
   "for": {
     "prefix": "for",
@@ -31,21 +35,24 @@
       "for ${1:i} = ${2:array}",
       "$0",
       "end"
-    ]
+    ],
+    "description": "Execute statements specified number of times"
   },
   "function": {
     "prefix": "function",
     "body": [
-      "function ${3:output} = ${1:name}($2)",
+      "function ${3:output} = ${1:name}(${2:input})",
       "// ${4:Description of $1($2)}",
       "endfunction"
-    ]
+    ],
+    "description": "Declare function name, inputs, and outputs"
   },
   "getf": {
     "prefix": "getf",
     "body": [
       "getf(\"${0:script.sci}\")"
-    ]
+    ],
+    "description": "defining a function from a file"
   },
   "if else end": {
     "prefix": "ifelse",
@@ -55,7 +62,8 @@
       "else",
       "$3",
       "end"
-    ]
+    ],
+    "description": "if else statement"
   },
   "if end": {
     "prefix": "if",
@@ -63,31 +71,36 @@
       "if ${1:condition} then",
       "$0",
       "end"
-    ]
+    ],
+    "description": "if statement"
   },
   "legend": {
     "prefix": "legend",
     "body": [
       "legend(\"${1:Graph 1}\", \"${2:Graph 2}\")"
-    ]
+    ],
+    "description": "draw graph legend"
   },
   "ones": {
     "prefix": "ones",
     "body": [
       "ones(${1:rows}, ${2:cols})"
-    ]
+    ],
+    "description": "Create array of all ones"
   },
   "plot": {
     "prefix": "plot",
     "body": [
       "plot(${1:x}, ${2:y}, ${3:'-'})"
-    ]
+    ],
+    "description": "2D plot"
   },
   "plot3d": {
     "prefix": "plot3d",
     "body": [
       "plot3d(${1:x}, ${2:y}, ${3:z})"
-    ]
+    ],
+    "description": "3D plot of a surface"
   },
   "select case end": {
     "prefix": "select",
@@ -96,7 +109,8 @@
       "case ${2:expression} then",
       "$0",
       "end"
-    ]
+    ],
+    "description": "select ... case ... end"
   },
   "while end": {
     "prefix": "while",
@@ -104,18 +118,21 @@
       "while ${1:condition} then",
       "$0",
       "end"
-    ]
+    ],
+    "description": "Repeat execution of statements while condition is true"
   },
   "xtitle": {
     "prefix": "title",
     "body": [
       "xtitle(\"${1:Main Title}\", \"${2:x-axis}\", \"${3:y-axis}\")"
-    ]
+    ],
+    "description": "add titles on a graphics window"
   },
   "zeros": {
     "prefix": "zeros",
     "body": [
       "zeros(${1:rows}, ${2:cols})"
-    ]
+    ],
+    "description": "Create array of all zeros"
   }
 }
