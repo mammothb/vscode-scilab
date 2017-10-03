@@ -1,49 +1,49 @@
 {
-  "name": "scilab",
-  "displayName": "Scilab",
-  "description": "Scilab support for Visual Studio Code",
-  "version": "0.0.1",
-  "publisher": "mammothb",
-  "license": "SEE LICENSE IN LICENSE.md",
-  "engines": {
-    "vscode": "^1.16.0"
-  },
-  "categories": [
-    "Languages"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mammothb/vscode-scilab.git"
-  },
-  "icon": "images/icon.png",
-  "bugs": "https://github.com/mammothb/vscode-scilab/issues",
-  "contributes": {
-    "languages": [
-      {
-        "id": "scilab",
-        "aliases": [
-          "Scilab",
-          "scilab"
-        ],
-        "extensions": [
-          ".sce",
-          ".sci"
-        ],
-        "configuration": "./language-configuration.json"
-      }
+    "name": "scilab",
+    "displayName": "Scilab",
+    "description": "Scilab support for Visual Studio Code",
+    "version": "0.0.2",
+    "publisher": "mammothb",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Languages"
     ],
-    "grammars": [
-      {
-        "language": "scilab",
-        "scopeName": "source.scilab",
-        "path": "./syntaxes/scilab.tmLanguage"
-      }
-    ],
-    "snippets": [
-      {
-        "language": "scilab",
-        "path": "./snippets/scilab.json"
-      }
-    ]
-  }
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mammothb/vscode-scilab.git"
+    },
+    "icon": "images/icon.png",
+    "bugs": "https://github.com/mammothb/vscode-scilab/issues",
+    "contributes": {
+        "languages": [
+            {
+                "id": "scilab",
+                "aliases": [
+                    "Scilab",
+                    "scilab"
+                ],
+                "extensions": [
+                    ".sce",
+                    ".sci"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "scilab",
+                "scopeName": "source.scilab",
+                "path": "./syntaxes/scilab.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "scilab",
+                "path": "./snippets/scilab.json"
+            }
+        ]
+    }
 }
