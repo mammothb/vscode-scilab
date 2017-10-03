@@ -11,6 +11,12 @@
   "categories": [
     "Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mammothb/vscode-scilab.git"
+  },
+  "icon": "images/icon.png",
+  "bugs": "https://github.com/mammothb/vscode-scilab/issues",
   "contributes": {
     "languages": [
       {
