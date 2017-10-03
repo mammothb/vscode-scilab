@@ -1,0 +1,43 @@
+{
+  "name": "scilab",
+  "displayName": "Scilab",
+  "description": "Scilab support for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "mammothb",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "engines": {
+    "vscode": "^1.16.0"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "scilab",
+        "aliases": [
+          "Scilab",
+          "scilab"
+        ],
+        "extensions": [
+          ".sce",
+          ".sci"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "scilab",
+        "scopeName": "source.scilab",
+        "path": "./syntaxes/scilab.tmLanguage"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "scilab",
+        "path": "./snippets/scilab.json"
+      }
+    ]
+  }
+}

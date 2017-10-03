@@ -1,0 +1,33 @@
+{
+	"comments": {
+		"lineComment": "//",
+		// Only supported in Scilab 6.0.0 and above
+		// "blockComment": [ "/*", "*/" ]
+	},
+	// symbols used as brackets
+	"brackets": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"]
+	],
+    // symbols that are auto closed when typing
+    "autoClosingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["'", "'"]
+    ],
+    // symbols that that can be used to surround a selection
+    "surroundingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["'", "'"]
+	],
+	"indentationRules": {
+		"increaseIndentPattern": "^\\s*\\b(function|if|else|elseif|select|case|otherwise|for|while|try|catch)\\b",
+		"decreaseIndentPattern": "^\\s*\\b(end\\w*|catch|else|elseif|case)\\b"
+	}
+}

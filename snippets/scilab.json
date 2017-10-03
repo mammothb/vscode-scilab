@@ -1,0 +1,121 @@
+{
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1:expression} then",
+      "\t$0"
+    ]
+  },
+  "elseif": {
+    "prefix": "elseif",
+    "body": [
+      "elseif ${1:condition} then",
+      "$0"
+    ]
+  },
+  "exec": {
+    "prefix": "exec",
+    "body": [
+      "exec(\"${0:script.sce}\")"
+    ]
+  },
+  "eye": {
+    "prefix": "eye",
+    "body": [
+      "eye(${1:size}, ${2:$1})"
+    ]
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:i} = ${2:array}",
+      "$0",
+      "end"
+    ]
+  },
+  "function": {
+    "prefix": "function",
+    "body": [
+      "function ${3:output} = ${1:name}($2)",
+      "// ${4:Description of $1($2)}",
+      "endfunction"
+    ]
+  },
+  "getf": {
+    "prefix": "getf",
+    "body": [
+      "getf(\"${0:script.sci}\")"
+    ]
+  },
+  "if else end": {
+    "prefix": "ifelse",
+    "body": [
+      "if ${1:condition} then",
+      "$2",
+      "else",
+      "$3",
+      "end"
+    ]
+  },
+  "if end": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition} then",
+      "$0",
+      "end"
+    ]
+  },
+  "legend": {
+    "prefix": "legend",
+    "body": [
+      "legend(\"${1:Graph 1}\", \"${2:Graph 2}\")"
+    ]
+  },
+  "ones": {
+    "prefix": "ones",
+    "body": [
+      "ones(${1:rows}, ${2:cols})"
+    ]
+  },
+  "plot": {
+    "prefix": "plot",
+    "body": [
+      "plot(${1:x}, ${2:y}, ${3:'-'})"
+    ]
+  },
+  "plot3d": {
+    "prefix": "plot3d",
+    "body": [
+      "plot3d(${1:x}, ${2:y}, ${3:z})"
+    ]
+  },
+  "select case end": {
+    "prefix": "select",
+    "body": [
+      "select ${1:variable}",
+      "case ${2:expression} then",
+      "$0",
+      "end"
+    ]
+  },
+  "while end": {
+    "prefix": "while",
+    "body": [
+      "while ${1:condition} then",
+      "$0",
+      "end"
+    ]
+  },
+  "xtitle": {
+    "prefix": "title",
+    "body": [
+      "xtitle(\"${1:Main Title}\", \"${2:x-axis}\", \"${3:y-axis}\")"
+    ]
+  },
+  "zeros": {
+    "prefix": "zeros",
+    "body": [
+      "zeros(${1:rows}, ${2:cols})"
+    ]
+  }
+}
