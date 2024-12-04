@@ -1,5 +1,7 @@
 # Scilab for Visual Studio Code
 
+Edit for ownership proof 80c2ec86
+
 This extension adds support for Scilab to VS Code, including:
 
 ## Syntax highlighting
