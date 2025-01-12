@@ -1,8 +1,8 @@
 {
-    "name": "scilab",
-    "displayName": "Scilab",
+    "name": "vscode-scilab-syntax",
+    "displayName": "Scilab: Syntax Highlighting",
     "description": "Scilab support for Visual Studio Code",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "mammothb",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
